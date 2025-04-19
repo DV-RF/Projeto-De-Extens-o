@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação no Trabalho</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pesquisa de Satisfação no Trabalho</h1>
+        <p>Este formulário faz parte de um projeto de extensão universitário e tem como objetivo medir o nível de satisfação dos colaboradores. Suas respostas serão fundamentais para identificar oportunidades de melhoria e fortalecer o ambiente de trabalho. A pesquisa é completamente anônima, garantindo que você possa compartilhar sua opinião com segurança e transparência.</p>
+
+        <form id="formulario">
+            <!-- Pergunta 1 -->
+            <label>1. Qual seu setor na empresa?</label>
+            <div>
+                <input type="radio" name="setor" value="Administrativo" required> Administrativo <br>
+                <input type="radio" name="setor" value="Logística" required> Logística <br>
+                <input type="radio" name="setor" value="Manutenção" required> Manutenção <br>
+                <input type="radio" name="setor" value="Motorista" required> Motorista <br>
+                <input type="radio" name="setor" id="outro" value="Outro" required> Outro  
+                <input type="text" id="campoOutro" name="outroCargo" placeholder="Escreva seu cargo" style="display: none;">
+            </div>
+
+            <!-- Pergunta 2 -->
+            <label>2. Como você avalia sua carga de trabalho atual?</label>
+            <div>
+                <input type="radio" name="carga" value="Adequada" required> Adequada <br>
+                <input type="radio" name="carga" value="Leve" required> Leve <br>
+                <input type="radio" name="carga" value="Muito Leve" required> Muito Leve <br>
+                <input type="radio" name="carga" value="Pesada" required> Pesada <br>
+                <input type="radio" name="carga" value="Muito Pesada" required> Muito Pesada  
+            </div>
+
+            <!-- Pergunta 3 -->
+            <label>3. Como você avalia sua relação com os colegas de trabalho e a comunicação interna da empresa?</label>
+            <div>
+                <input type="radio" name="colegas" value="Boa" required> Boa <br>
+                <input type="radio" name="colegas" value="Excelente" required> Excelente <br>
+                <input type="radio" name="colegas" value="Neutra" required> Neutra <br>
+                <input type="radio" name="colegas" value="Ruim" required> Ruim <br>
+                <input type="radio" name="colegas" value="Muito Ruim" required> Muito Ruim  
+            </div>
+
+            <!-- Pergunta 4 -->
+            <label>4. Como você avalia o apoio da liderança (supervisores, chefes)?</label>
+            <div>
+                <input type="radio" name="lideranca" value="Bom" required> Bom <br>
+                <input type="radio" name="lideranca" value="Ótimo" required> Ótimo <br>
+                <input type="radio" name="lideranca" value="Péssimo" required> Péssimo <br>
+                <input type="radio" name="lideranca" value="Regular" required> Regular <br>
+                <input type="radio" name="lideranca" value="Ruim" required> Ruim  
+            </div>
+
+            <!-- Pergunta 5 -->
+            <label>5. Você se sente seguro(a) durante suas atividades e acredita que seu trabalho impacta sua saúde mental/física?</label>
+            <div>
+                <input type="radio" name="seguranca" value="Às vezes" required> Às vezes <br>
+                <input type="radio" name="seguranca" value="Frequentemente" required> Frequentemente <br>
+                <input type="radio" name="seguranca" value="Nunca" required> Nunca <br>
+                <input type="radio" name="seguranca" value="Raramente" required> Raramente <br>
+                <input type="radio" name="seguranca" value="Sempre" required> Sempre  
+            </div>
+
+            <!-- Pergunta 6 -->
+            <label>6. Você se sente valorizado(a) pela empresa e vê oportunidades de crescimento profissional?</label>
+            <div>
+                <input type="radio" name="valorizacao" value="Às vezes" required> Às vezes <br>
+                <input type="radio" name="valorizacao" value="Frequentemente" required> Frequentemente <br>
+                <input type="radio" name="valorizacao" value="Nunca" required> Nunca <br>
+                <input type="radio" name="valorizacao" value="Raramente" required> Raramente <br>
+                <input type="radio" name="valorizacao" value="Sempre" required> Sempre  
+            </div>
+
+            <!-- Pergunta 7 -->
+            <label>7. A empresa oferece condições adequadas de trabalho (equipamentos, ambiente, apoio)?</label>
+            <div>
+                <input type="radio" name="condicoes" value="Às vezes" required> Às vezes <br>
+                <input type="radio" name="condicoes" value="Frequentemente" required> Frequentemente <br>
+                <input type="radio" name="condicoes" value="Nunca" required> Nunca <br>
+                <input type="radio" name="condicoes" value="Raramente" required> Raramente <br>
+                <input type="radio" name="condicoes" value="Sempre" required> Sempre  
+            </div>
+            <label>8. De 1 a 10, como você avalia o apoio da empresa ao colaborador?</label>
+<p>(Escala numérica de 1 a 10, sendo 1 péssimo e 10 excelente).</p>
+
+<div class="radio-scale">
+    <span class="scale-label left">Péssimo</span>
+    <div class="radio-options">
+        <label><span>1</span><input type="radio" name="avaliacao" value="1" required></label>
+        <label><span>2</span><input type="radio" name="avaliacao" value="2" required></label>
+        <label><span>3</span><input type="radio" name="avaliacao" value="3" required></label>
+        <label><span>4</span><input type="radio" name="avaliacao" value="4" required></label>
+        <label><span>5</span><input type="radio" name="avaliacao" value="5" required></label>
+        <label><span>6</span><input type="radio" name="avaliacao" value="6" required></label>
+        <label><span>7</span><input type="radio" name="avaliacao" value="7" required></label>
+        <label><span>8</span><input type="radio" name="avaliacao" value="8" required></label>
+        <label><span>9</span><input type="radio" name="avaliacao" value="9" required></label>
+        <label><span>10</span><input type="radio" name="avaliacao" value="10" required></label>
+    </div>
+    <span class="scale-label right">Excelente</span>
+</div>
+            <!-- Perguntas abertas -->
+            <label>9. O que poderia melhorar no seu ambiente de trabalho?</label>
+            <textarea name="melhoria" required></textarea>
+
+            <label>10. Deseja deixar alguma sugestão ou comentário final?</label>
+            <textarea name="comentarios" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
